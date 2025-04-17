@@ -5,7 +5,7 @@ module.exports = async (srv) => {
   const { Cryptocurrencies } = srv.entities;
 
   srv.on('READ', Cryptocurrencies, async () => {
-    const apiKey = '0d29f78e-c8d0-4988-8527-f318c11ab3e2'; // sua API key
+    const apiKey = 'sua API key'; // sua API key
     const url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
 
     try {
